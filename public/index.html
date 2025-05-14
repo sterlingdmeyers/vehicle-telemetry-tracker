@@ -9,6 +9,27 @@
 <body>
     <h1>Vehicle Telemetry</h1>
     <canvas id="telemetryCanvas" width="600" height="400"></canvas>
+    <div style="display: flex; justify-content: space-around; margin-top: 20px; width: 80%;">
+        <div>
+            <h3>Temperature</h3>
+            <p><span id="temperatureValue">--</span> °C</p>
+        </div>
+        <div>
+            <h3>RPM</h3>
+            <p><span id="rpmValue">--</span></p>
+        </div>
+        <div>
+            <h3>Fuel Level</h3>
+            <div style="border: 1px solid #ccc; width: 100px; height: 20px;">
+                <div id="fuelLevelBar" style="background-color: green; height: 100%; width: 0%;"></div>
+            </div>
+            <p><span id="fuelLevelValue">--</span> %</p>
+        </div>
+        <div>
+            <h3>Timestamp</h3>
+            <p><span id="timestampValue">--</span></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
